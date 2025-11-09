@@ -1,0 +1,144 @@
+/* Dashboard Container */
+.dashboard-container {
+  padding: 20px;
+  height: 100%;
+}
+
+/* Calendar Styles */
+.calendar-container {
+  height: calc(100vh - 200px);
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom Calendar Event Styles */
+.rbc-event {
+  background-color: #3b82f6;
+  border: none;
+  border-radius: 4px;
+  padding: 2px 5px;
+}
+
+.rbc-event-label {
+  font-size: 12px;
+}
+
+.rbc-event-content {
+  font-size: 14px;
+}
+
+/* Calendar Header */
+.rbc-toolbar {
+  margin-bottom: 20px;
+}
+
+.rbc-toolbar button {
+  color: #374151;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.rbc-toolbar button:hover {
+  background-color: #f3f4f6;
+}
+
+.rbc-toolbar button.rbc-active {
+  background-color: #3b82f6;
+  color: white;
+}
+
+/* Calendar Grid */
+.rbc-month-view {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.rbc-header {
+  padding: 10px;
+  font-weight: 500;
+  color: #4b5563;
+}
+
+.rbc-date-cell {
+  padding: 5px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.rbc-today {
+  background-color: #eff6ff;
+}
+
+/* Time Grid */
+.rbc-time-view {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.rbc-timeslot-group {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.rbc-time-header-content {
+  border-left: 1px solid #e5e7eb;
+}
+
+/* Agenda View */
+.rbc-agenda-view table {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.rbc-agenda-view table thead {
+  background-color: #f9fafb;
+}
+
+.rbc-agenda-view table.rbc-agenda-table tbody > tr > td {
+  padding: 10px;
+}
+
+/* Modal Styles */
+.event-modal {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.event-modal-header {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.event-modal-content {
+  margin-bottom: 20px;
+}
+
+.event-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .calendar-container {
+    height: calc(100vh - 150px);
+  }
+
+  .rbc-toolbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .rbc-toolbar-label {
+    margin: 10px 0;
+  }
+} 
