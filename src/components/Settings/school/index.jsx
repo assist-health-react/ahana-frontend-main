@@ -8,7 +8,8 @@ import { getAllSchools, createSchool, deleteSchool, getSchoolById, updateSchool 
 import { toast } from 'react-toastify'
 import { useNavigate } from 'react-router-dom'
 import api from '../../../services/api'
-import { Select } from 'react-select'
+import  Select  from 'react-select'
+//import { Select } from 'react-select'
 
 const SchoolManagement = () => {
   const navigate = useNavigate()

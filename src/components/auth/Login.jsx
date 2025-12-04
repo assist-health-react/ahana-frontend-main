@@ -86,17 +86,18 @@ const Login = () => {
             <div className="text-center mb-8">
               <div className="flex justify-center mb-4">
                 <img 
-                  src="/assets/assist-health-logo.png" 
+                  src="/assets/logo_new.png" 
                   alt="AssistHealth" 
-                  className="h-12 w-12 object-contain"
+                  className=" object-contain"
+                       style={{ width: 300  }} 
                 />
               </div>
               <div className="text-2xl font-semibold mb-2">
-                <span className="text-gray-800">Assist</span>
-                <span className="text-[#38B6FF]">Health</span>
+                {/* <span className="text-gray-800">Assist</span>
+                <span className="text-[#38B6FF]">Health</span> */}
               </div>
               <h1 className="text-xl font-bold text-gray-800 mb-2">
-                Login to Ahana Portal
+                Login to Ahana Portal 
               </h1>
             </div>
 

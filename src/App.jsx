@@ -61,11 +61,11 @@ const ProtectedLayout = () => {
   const [isSidebarExpanded, setSidebarExpanded] = useState(true);
   const navigate = useNavigate();
   const { loading, initialized } = useNurse();
-
+const iconColor = '#3ea767';
   const navigation = [
-    { name: 'Dashboard', path: '/', icon: <FaChartBar />, color: 'text-purple-500' },
-    { name: 'Ahana', path: '/ahana', icon: <FaStar />, color: 'text-yellow-500' },
-    { name: 'Settings', path: '/settings', icon: <FaCog />, color: 'text-gray-500' },
+    { name: 'Dashboard', path: '/', icon: <FaChartBar style={{ color: iconColor }} />, color: '' },//text-purple-500
+    { name: 'Ahana', path: '/ahana', icon: <FaStar style={{ color: iconColor }} />, color: '' },//text-yellow-500
+    { name: 'Settings', path: '/settings', icon: <FaCog style={{ color: iconColor }} />, color: '' },//text-gray-500
   ];
 
   const handleLogout = () => {
